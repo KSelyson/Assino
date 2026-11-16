@@ -111,6 +111,8 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 3.3.x não encontra a classe principal quando o caminho tem acento (ex.: "Área de Trabalho") -->
+                <version>3.4.5</version>
                 <configuration>
                     <excludes>
                         <exclude>
