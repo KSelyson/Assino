@@ -46,7 +46,7 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-    /** CORS liberado para desenvolvimento (app React Native). */
+    /** CORS liberado para desenvolvimento (front-end React). */
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
